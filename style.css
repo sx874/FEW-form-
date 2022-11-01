@@ -1,0 +1,13 @@
+.form {
+    text-align: center;
+    border: solid 2px black;
+    padding-bottom: 20px;
+    margin: auto;
+}
+
+#result {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10px;
+    color: black;
+}
