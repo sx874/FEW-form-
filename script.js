@@ -11,24 +11,16 @@ bttn.addEventListener('click', story => {
     document.getElementById("address").value = '';
     document.getElementById("birthday").value = '';
     document.getElementById("name").value = '';
-//changing css after button clicked
-    document.getElementById("form").style.fontSize = "10px";
-    document.getElementById("form").style.color = "red";
-//animate button after clicked
-    const movement = 10;
-    const circle = getElementById("animation");
-    const moveCircle = () => {
-        const xCircle = parseFloat(getComputedStyle(circle).left);
-        circle.style.left = (xCircle + movement) + "px";
-        requestAnimationFrame(moveCircle);
-    };
-    requestAnimationFrame(moveCircle);
-    
+//changing css and animate after button clicked
+    document.getElementById("form").classList.add("postSubmit");
+    document.getElementById("result").classList.add("animate");
+    setTimeout(() => {
+        document.getElementById("form").classList.remove("postSubmit");
+        document.getElementById("result").innerText = '';
+        document.getElementById("result").classList.remove("animate");
+    }, 5000);
 });
 
-bttn.addEventListener('click', () => {
-    setTimeout(() => {
-        bttn.removeEventListener('click', story);
-    }, 1000)
-})
+
+
 
