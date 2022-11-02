@@ -5,25 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    
     <title>Document</title>
 </head>
 <body>
-    <div class="form">
-        <p>NAME</p>
+    <div id="form">
+        <p class='item'>NAME</p>
         <input type="text" id="name">
-        <p>BIRTHDAY <br /> (dd/mm/yyyy)</p>
+        <p class='item'>BIRTHDAY<br />(dd/mm/yyyy)</p>
         <input type="text" id="birthday">
-        <p>ADDRESS</p>
+        <p class='item'>ADDRESS</p>
         <input type="text" id="address">
-        <p>SSN</p>
+        <p class='item'>SSN</p>
         <input type="text" id="SSN">
         <br />
         <br />
         <button id="submit">submit</button>
-        
+
+        <div id="animation"></div>
     </div>
+   
     <div id="result"></div>
-    
+    <script src="script.js"></script>
 </body>
 </html>
